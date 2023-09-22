@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="PhysicsMaterial" id=2]
+friction = 0.5
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 411, 10 )
+
+[node name="Wall" type="StaticBody2D"]
+physics_material_override = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -410.0
+margin_top = -6.0
+margin_right = 411.0
+margin_bottom = 9.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
