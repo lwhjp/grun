@@ -1,13 +1,91 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Map01.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Main.gd" type="Script" id=3]
+[ext_resource path="res://Prize.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
 
 [node name="Map01" parent="." instance=ExtResource( 2 )]
+
+[node name="Prizes" type="Node" parent="."]
+
+[node name="Prize" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 76.5402, 48.507 )
+
+[node name="Prize2" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 112.763, 48.192 )
+
+[node name="Prize3" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 104.888, 73.3904 )
+
+[node name="Prize4" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 71.1856, 92.2892 )
+
+[node name="Prize5" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 93.2342, 115.598 )
+
+[node name="Prize6" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 117.488, 165.05 )
+
+[node name="Prize7" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 74.3353, 235.29 )
+
+[node name="Prize8" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 126.622, 236.55 )
+
+[node name="Prize9" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 204.107, 234.03 )
+
+[node name="Prize10" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 165.68, 159.065 )
+
+[node name="Prize11" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 170.404, 128.512 )
+
+[node name="Prize12" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 203.162, 81.8949 )
+
+[node name="Prize13" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 245.685, 32.7579 )
+
+[node name="Prize14" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 199.383, 31.813 )
+
+[node name="Prize15" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 68.3507, 135.127 )
+
+[node name="Prize16" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 31.498, 212.927 )
+
+[node name="Prize17" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 49.7669, 239.07 )
+
+[node name="Prize18" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 160.325, 279.388 )
+
+[node name="Prize19" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 160.64, 227.416 )
+
+[node name="Prize20" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 244.74, 270.883 )
+
+[node name="Prize21" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 243.165, 131.032 )
+
+[node name="Prize22" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 285.057, 105.833 )
+
+[node name="Prize23" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 234.66, 168.829 )
+
+[node name="Prize24" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 32.4429, 93.2342 )
+
+[node name="Prize25" parent="Prizes" instance=ExtResource( 4 )]
+position = Vector2( 288.522, 228.676 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 225.325, 231.767 )

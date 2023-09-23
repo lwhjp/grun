@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal got_prize
+
 export var gravity_direction = Vector2.DOWN
 var velocity = Vector2()
 
@@ -29,3 +31,9 @@ func _physics_process(delta):
 		velocity *= pow(0.5, delta)
 		if velocity.length() < 10:
 			velocity = Vector2()
+
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group('prizes'):
+		emit_signal('got_prize')
+		area.queue_free()
