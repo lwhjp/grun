@@ -5,10 +5,20 @@
 [ext_resource path="res://Main.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2151.75, 2205.93 )
+extents = Vector2( 1024, 1024 )
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
+
+[node name="WorldGravity" type="Area2D" parent="."]
+visible = false
+space_override = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldGravity"]
+position = Vector2( 1024, 1024 )
+shape = SubResource( 1 )
+
+[node name="Map01" parent="." instance=ExtResource( 2 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1452.52, 1452.42 )
@@ -16,11 +26,3 @@ position = Vector2( 1452.52, 1452.42 )
 [node name="Camera" type="Camera2D" parent="Player"]
 rotating = true
 current = true
-
-[node name="WorldGravity" type="Area2D" parent="."]
-space_override = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldGravity"]
-shape = SubResource( 1 )
-
-[node name="Map01" parent="." instance=ExtResource( 2 )]
