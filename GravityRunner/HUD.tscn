@@ -5,10 +5,11 @@
 [node name="Score" type="Label" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_bottom = 14.0
+margin_left = -68.0
+margin_bottom = 36.0
 text = "0 / 0"
-align = 2
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
