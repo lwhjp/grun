@@ -36,4 +36,5 @@ func _physics_process(delta):
 func _on_Area2D_area_entered(area):
 	if area.is_in_group('prizes'):
 		emit_signal('got_prize')
+		$GetSound.play()
 		area.queue_free()
